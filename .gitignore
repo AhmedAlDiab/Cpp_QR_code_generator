@@ -10,6 +10,8 @@
 *.userosscache
 *.sln.docstates
 
+#Output
+qr_out/
 
 #cmake build
 build/
@@ -44,6 +46,7 @@ bld/
 
 # Conan generated files
 conan/
+.conan/
 
 # Visual Studio 2017 auto generated files
 Generated\ Files/
