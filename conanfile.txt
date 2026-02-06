@@ -1,7 +1,9 @@
 [requires]
 wxwidgets/3.2.8
+
 [generators]
 CMakeDeps
 CMakeToolchain
+
 [layout]
 cmake_layout

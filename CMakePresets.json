@@ -9,8 +9,7 @@
             "installDir": "${sourceDir}/out/install/${presetName}",
             "cacheVariables": {
                 "CMAKE_C_COMPILER": "cl.exe",
-                "CMAKE_CXX_COMPILER": "cl.exe",
-                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/out/build/x64-debug/build/generators/conan_toolchain.cmake"
+                "CMAKE_CXX_COMPILER": "cl.exe"
             },
             "condition": {
                 "type": "equals",
@@ -18,6 +17,7 @@
                 "rhs": "Windows"
             }
         },
+
         {
             "name": "x64-debug",
             "displayName": "x64 Debug",
@@ -27,17 +27,24 @@
                 "strategy": "external"
             },
             "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Debug"
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/conan/x64/deb/build/generators/conan_toolchain.cmake"
             }
         },
         {
             "name": "x64-release",
             "displayName": "x64 Release",
-            "inherits": "x64-debug",
+            "inherits": "windows-base",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
             "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Release"
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/conan/x64/rel/build/generators/conan_toolchain.cmake"
             }
         },
+
         {
             "name": "x86-debug",
             "displayName": "x86 Debug",
@@ -47,15 +54,21 @@
                 "strategy": "external"
             },
             "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Debug"
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/conan/x86/deb/build/generators/conan_toolchain.cmake"
             }
         },
         {
             "name": "x86-release",
             "displayName": "x86 Release",
-            "inherits": "x86-debug",
+            "inherits": "windows-base",
+            "architecture": {
+                "value": "x86",
+                "strategy": "external"
+            },
             "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Release"
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/conan/x86/rel/build/generators/conan_toolchain.cmake"
             }
         }
     ]
