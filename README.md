@@ -37,14 +37,14 @@ conan profile detect --force
 
 From the project root directory (for debug mode):
 ```bash
-conan install . -s build_type=Release -s arch=x86_64 -of=conan/x64/rel --build=missing --build=wxwidgets/*
-cmake --preset x64-release
-cmake --build out/build/x64-release
+conan install . -s build_type=Debug -s arch=x86_64 -of=conan/x64/deb --build=missing
+cmake --preset x64-debug
+cmake --build out/build/x64-debug
 ```
 
 From the project root directory (for release mode):
 ```bash
-conan install . -sbuild_type=Release -of=conan/rel --build=missing
+conan install . -s build_type=Release -s arch=x86_64 -of=conan/x64/rel --build=missing
 cmake --preset x64-release
 cmake --build out/build/x64-release
 ```
