@@ -1,5 +1,8 @@
 # Cpp_QR_code_generator
 
+## Download
+Prebuilt executables are available under [**Releases**](https://github.com/AhmedAlDiab/Cpp_QR_code_generator/releases).
+- v1 - [Download](https://github.com/AhmedAlDiab/Cpp_QR_code_generator/releases/download/v1.0.0/QR_code_generator.exe)
 
 ## Building the Project
 
