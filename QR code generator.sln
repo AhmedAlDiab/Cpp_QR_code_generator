@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QR code generator", "QR code generator.vcxproj", "{0D84386F-0728-43B5-A623-9A4F837366FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D84386F-0728-43B5-A623-9A4F837366FF}.Debug|x64.ActiveCfg = Debug|x64
+		{0D84386F-0728-43B5-A623-9A4F837366FF}.Debug|x64.Build.0 = Debug|x64
+		{0D84386F-0728-43B5-A623-9A4F837366FF}.Debug|x86.ActiveCfg = Debug|Win32
+		{0D84386F-0728-43B5-A623-9A4F837366FF}.Debug|x86.Build.0 = Debug|Win32
+		{0D84386F-0728-43B5-A623-9A4F837366FF}.Release|x64.ActiveCfg = Release|x64
+		{0D84386F-0728-43B5-A623-9A4F837366FF}.Release|x64.Build.0 = Release|x64
+		{0D84386F-0728-43B5-A623-9A4F837366FF}.Release|x86.ActiveCfg = Release|Win32
+		{0D84386F-0728-43B5-A623-9A4F837366FF}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7E1AB62-BF0A-47D9-90D3-8C58A5249F36}
+	EndGlobalSection
+EndGlobal
