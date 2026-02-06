@@ -1,12 +1,21 @@
-﻿# CMakeList.txt : CMake project for QR_code_generator, include source and define
-# project specific logic here.
-#
+﻿cmake_minimum_required(VERSION 3.21)
+project(QR_code_generator)
 
-# Add source to this project's executable.
-add_executable (QR_code_generator "QR_code_generator.cpp" "QR_code_generator.h")
+set(CMAKE_CXX_STANDARD 20)
 
-if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET QR_code_generator PROPERTY CXX_STANDARD 20)
-endif()
+# Point CMake to Conan CMakeDeps output
+list(APPEND CMAKE_PREFIX_PATH "C:/AAD-Projects/QR code generator/Code/conan/deb/build/generators")
 
-# TODO: Add tests and install targets if needed.
+find_package(wxWidgets CONFIG REQUIRED)
+
+add_executable(QR_code_generator
+  WIN32
+  QR_code_generator.cpp
+  QR_code_generator.h
+)
+
+# wxWidgets CMake package usually provides these variables:
+# wxWidgets_LIBRARIES, wxWidgets_INCLUDE_DIRS, wxWidgets_DEFINITIONS
+target_include_directories(QR_code_generator PRIVATE ${wxWidgets_INCLUDE_DIRS})
+target_compile_definitions(QR_code_generator PRIVATE ${wxWidgets_DEFINITIONS})
+target_link_libraries(QR_code_generator PRIVATE ${wxWidgets_LIBRARIES})

@@ -9,7 +9,8 @@
             "installDir": "${sourceDir}/out/install/${presetName}",
             "cacheVariables": {
                 "CMAKE_C_COMPILER": "cl.exe",
-                "CMAKE_CXX_COMPILER": "cl.exe"
+                "CMAKE_CXX_COMPILER": "cl.exe",
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/out/build/x64-debug/build/generators/conan_toolchain.cmake"
             },
             "condition": {
                 "type": "equals",
