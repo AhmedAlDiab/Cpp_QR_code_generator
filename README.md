@@ -29,7 +29,7 @@ conan --version
 From the project root directory:
 ```bash
 conan profile detect --force
-conan install . --output-folder=build --build=missing
+conan install . -sbuild_type=Debug -of=conan/deb --build=missing
 ```
 
 This will download and configure all required dependencies.
