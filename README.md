@@ -50,7 +50,7 @@ cmake --build out/build/x64-release
 ```
 
 *Same idea for x86 presets.*
-(Honstly I can't get it work with x86 arch)
+(Honestly I can't get it work with x86 arch)
 
 This will download and configure all required dependencies.
 
@@ -58,5 +58,5 @@ This will download and configure all required dependencies.
 - **qrcodegen**: For generating QR codes. [Link to Project](https://github.com/nayuki/QR-Code-generator/tree/master)
 - **wxWidgets** For GUI [Link to Project](https://www.wxwidgets.org/)
 
-obviusly I used **C++** as the programming language for this project.
+Obviously I used **C++** as the programming language for this project.
 "I know that my code sucks thanks 👍"
