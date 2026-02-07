@@ -14,7 +14,7 @@ This project uses **Conan** to manage dependencies.
 
 - Download Conan Extension for Visual Studio [MarketPlace](https://marketplace.visualstudio.com/items?itemName=conan-io.conan-vs-extension)
 - Download the wxwidgets library from the extension
-- run this command before building:
+- run this command before building (**In the Project root directory**):
 
     ```bash
     rmdir /s /q conan 2>nul
